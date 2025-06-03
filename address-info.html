@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <link rel="stylesheet" type="text/css"
+        href="//fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/css/dev/selfui.css">
+    <link rel="stylesheet" type="text/css"
+        href=" //fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/css/dev/iframeui.css">
+</head>
+
+<body style="margin: 3rem">
+    <ul>
+        <li><a href="/">Go back</a></li>
+    </ul>
+
+    <div class="notification-banner" aria-labelledby="notification-banner-title">
+        <div class="notification-banner__header">
+            <h3 class="notification-banner__title" id="notification-banner-title">
+                Location of the issue
+            </h3>
+        </div>
+        <div class="notification-banner__content" aria-labelledby="notification-banner-content">
+            <p class="notification-banner__heading">
+                {location_text}
+            </p>
+            <br>
+            <p>If this is not the right location, you can click the map again to move the pin</p>
+        </div>
+    </div>
+    <br>
+    <pre>
+        <code>
+        &lt;div class="notification-banner" aria-labelledby="notification-banner-title"&gt;
+            &lt;div class="notification-banner__header"&gt;
+                &lt;h3 class="notification-banner__title" id="notification-banner-title"&gt;
+                    Location of the issue
+                &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="notification-banner__content" aria-labelledby="notification-banner-content"&gt;
+                &lt;p class="notification-banner__heading"&gt;
+                    {location_text}
+                &lt;/p&gt;
+            &lt;br&gt;
+            &lt;p&gt;
+            If this is not the right location, you can click the map again to move the pin
+            &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        </code>
+    </pre>
+
+</body>
+
+</html>

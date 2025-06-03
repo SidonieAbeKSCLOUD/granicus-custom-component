@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Playground</title>
+	<link rel="stylesheet" type="text/css"
+		href="//fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/css/dev/selfui.css">
+	<link rel="stylesheet" type="text/css"
+		href=" //fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/css/dev/iframeui.css">
+</head>
+
+<body style="margin: 3rem">
+	<ul>
+		<li><a href="/">Go back</a></li>
+	</ul>
+
+	<table class="main"
+		style="border-spacing: 0; background-color: #fff; margin: 0 auto; width: 100%; max-width: 600px; font-family: sans-serif;"
+		width="100%">
+		<tbody>
+			<tr>
+				<td style="padding: 12px 24px 0;"><img alt=""
+						src="https://fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/LBSLetterLogo.png"
+						style="width: 180px; height: 70px; border: 0; display: block;" /></td>
+			</tr>
+			<tr>
+				<td style="padding: 0 24px;">
+					<h1>Report an issue in a park, open space or verge in Sutton</h1>
+
+					<h2>Reference: {caseReference}</h2>
+					<strong>Date reported: {dateReported}</strong>
+
+					<p>Thank you for submitting a report {caseReference}, this has been received by the relevant team.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding: 0 24px;">
+					<h3>Summary of report:</h3>
+
+					<table style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+						<tbody>
+							<tr>
+								<td style="font-weight: bold; padding-bottom: 8px; vertical-align: top; width: 180px;">
+									Type of issue:</td>
+								<td style="padding-bottom: 12px; vertical-align: top;">{issueType}</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; padding-bottom: 8px; vertical-align: top; width: 180px;">
+									Site selected:</td>
+								<td style="padding-bottom: 12px; vertical-align: top;">{siteLocation}</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; padding-bottom: 8px; vertical-align: top; width: 180px;">
+									@af:if({locationDescriptionText} != '') Location detail: @endaf:if</td>
+								<td style="padding-bottom: 12px; vertical-align: top;">@af:if({locationDescriptionText}
+									!= '') {locationDescriptionText} @endaf:if</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; padding-bottom: 8px; vertical-align: top; width: 180px;">
+									Description of the issue:</td>
+								<td style="padding-bottom: 12px; vertical-align: top;">{issueDetailText}</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding: 20px 24px 0;">
+					<p><strong>What happens next?</strong></p>
+
+					<p>The relevant team will assess the report.</p>
+
+					<p>We will get in touch if we need further details.</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding: 20px 24px;">
+					<p style="text-align: left;">Kind regards,</p>
+
+					<p style="text-align: left;">London Borough of Sutton</p>
+
+					<p style="text-align: left;"><strong>Telephone: 020 8770 5000<br />
+							Website: <a href="https://Sutton.gov.uk" rel="noopener"
+								target="_blank">www.sutton.gov.uk</a> </strong></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+
+</html>

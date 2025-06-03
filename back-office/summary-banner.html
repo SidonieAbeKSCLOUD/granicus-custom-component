@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Summary banner</title>
+    <link rel="stylesheet" type="text/css" href="//fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/css/dev/selfui.css">
+	<link rel="stylesheet" type="text/css" href=" //fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/css/dev/iframeui.css">
+
+</head>
+
+<body style="margin: 3rem">
+   <ul>
+        <li><a href="/">Go back</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="notification-banner" aria-labelledby="notification-banner-title">
+                <div class="notification-banner__header">
+                    <h3 class="notification-banner__title" id="notification-banner-title">
+                        Reference
+                    </h3>
+                </div>
+                <div class="notification-banner__content" aria-labelledby="notification-banner-content">
+                    <p class="notification-banner__heading">
+                        {caseReference}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="notification-banner" aria-labelledby="notification-banner-title">
+                <div class="notification-banner__header">
+                    <h3 class="notification-banner__title" id="notification-banner-title">
+                        Date reported
+                    </h3>
+                </div>
+                <div class="notification-banner__content" aria-labelledby="notification-banner-content">
+                    <p class="notification-banner__heading">
+                        {dateReported}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="notification-banner" aria-labelledby="notification-banner-title">
+                <div class="notification-banner__header">
+                    <h3 class="notification-banner__title" id="notification-banner-title">
+                        Issue type
+                    </h3>
+                </div>
+                <div class="notification-banner__content" aria-labelledby="notification-banner-content">
+                    <p class="notification-banner__heading">
+                        {selectedIssueHelper}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br/>
+
+    <pre><code>&lt;div class="row"&gt;
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="notification-banner" aria-labelledby="notification-banner-title"&gt;
+            &lt;div class="notification-banner__header"&gt;
+                &lt;h3 class="notification-banner__title" id="notification-banner-title"&gt;
+                    Reference
+                &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="notification-banner__content" aria-labelledby="notification-banner-content"&gt;
+                &lt;p class="notification-banner__heading"&gt;
+                    {caseReference}
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="notification-banner" aria-labelledby="notification-banner-title"&gt;
+            &lt;div class="notification-banner__header"&gt;
+                &lt;h3 class="notification-banner__title" id="notification-banner-title"&gt;
+                    Date reported
+                &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="notification-banner__content" aria-labelledby="notification-banner-content"&gt;
+                &lt;p class="notification-banner__heading"&gt;
+                    {dateReported}
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-sm-4"&gt;
+        &lt;div class="notification-banner" aria-labelledby="notification-banner-title"&gt;
+            &lt;div class="notification-banner__header"&gt;
+                &lt;h3 class="notification-banner__title" id="notification-banner-title"&gt;
+                    Issue type
+                &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="notification-banner__content" aria-labelledby="notification-banner-content"&gt;
+                &lt;p class="notification-banner__heading"&gt;
+                    {selectedIssueHelper}
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+</body>
+
+</html>

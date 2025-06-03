@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back office - zebra table</title>
+    <link rel="stylesheet" type="text/css"
+        href="//fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/css/dev/selfui.css">
+    <link rel="stylesheet" type="text/css"
+        href=" //fs-filestore-eu.s3-eu-west-1.amazonaws.com/rbkingston/Branding/css/dev/iframeui.css">
+
+    <style>
+        table {
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+    </style>
+</head>
+
+<body style="margin: 3rem">
+    <ul>
+        <li><a href="/">Go back</a></li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>
+                <h3>Case details</h3>
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <td style="width: 20%; height: 18px;"><strong>Location:</strong></td>
+            <td style="width: 20%; height: 18px;">{dataname...}</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; height: 18px;"><strong>Location details:</strong></td>
+            <td style="width: 20%; height: 18px; word-break: break-word;">{dataname...}</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; height: 18px;"><strong>Issue details:</strong></td>
+            <td style="width: 20%; height: 18px; word-break: break-word;">{dataname...}</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; height: 18px;"><strong>Photos added to report?</strong></td>
+            <td style="width: 20%; height: 18px;">{dataname...}</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; height: 18px;"><strong>Does customer want to be updated?</strong></td>
+            <td style="width: 20%; height: 18px;">{dataname...}</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; height: 18px;"><strong>Name:</strong></td>
+            <td style="width: 20%; height: 18px;">{dataname...}</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; height: 18px;"><strong>Email:</strong></td>
+            <td style="width: 20%; height: 18px;">{dataname...}</td>
+        </tr>
+        <tr>
+            <td style="width: 20%; height: 18px;"><strong>Phone:</strong></td>
+            <td style="width: 20%; height: 18px;">{dataname...}</td>
+        </tr>
+    </table>
+    <br />
+    <pre><code>
+&lt;style&gt;
+    table {
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #D6EEEE;
+    }
+&lt;/style&gt;
+
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;
+            &lt;h3&gt;Case details&lt;/h3&gt;
+        &lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Location:&lt;/strong&gt;&lt;/td&gt;
+        &lt;td&gt;{dataname...}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Location details:&lt;/strong&gt;&lt;/td&gt;
+        &lt;td style="word-break: break-word;"&gt;{dataname...}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Issue details:&lt;/strong&gt;&lt;/td&gt;
+        &lt;td style="word-break: break-word;"&gt;{dataname...}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Photos added to report?&lt;/strong&gt;&lt;/td&gt;
+        &lt;td&gt;{dataname...}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Does customer want to be updated?&lt;/strong&gt;&lt;/td&gt;
+        &lt;td&gt;{dataname...}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Name:&lt;/strong&gt;&lt;/td&gt;
+        &lt;td&gt;{dataname...}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Email:&lt;/strong&gt;&lt;/td&gt;
+        &lt;td&gt;{dataname...}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;strong&gt;Phone:&lt;/strong&gt;&lt;/td&gt;
+        &lt;td&gt;{dataname...}&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+
+</body>
+
+</html>
