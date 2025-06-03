@@ -27,6 +27,50 @@
     </ul>
 
     <hr />
+
+    <h2>Short URL generator</h2>
+    <p>Once generated, you can click the text to copy</p>
+    <form id="shortUrlGenerator">
+        <input type="text" id="shortUrlInput">
+        <button type="submit">Generate</button>
+    </form>
+
+
+    <p id="generatedUrl" style="cursor: pointer; user-select: all;"></p>
+
+    <script>
+        document.getElementById('shortUrlGenerator').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const input = document.getElementById('shortUrlInput');
+            const original = input.value;
+
+            // Replace spaces and all non-alphanumeric characters with _
+            const transformed = original.replace(/[^a-zA-Z0-9]/g, '_');
+
+            const output = document.getElementById('generatedUrl');
+            output.textContent = transformed;
+        });
+
+        // Allow clicking on the <p> to copy its contents
+        document.getElementById('generatedUrl').addEventListener('click', function () {
+            const range = document.createRange();
+            range.selectNode(this);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy!');
+            }
+
+            selection.removeAllRanges();
+        });
+    </script>
+
 </body>
 
 </html>
